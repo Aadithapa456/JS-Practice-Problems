@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-900">
+    <!-- Darker background for the whole page -->
+    <div class="container mx-auto p-6">
+      <div class="mb-6">
+        <label for="large-input" class="block mb-2 text-sm font-medium text-gray-300">
+          >Enter a text</label
+        >
+        <input
+          type="text"
+          id="user-input"
+          class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-white text-base focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        />
+      </div>
+      <div class="mb-6">
+        <label for="default-input" class="block mb-2 text-sm font-medium text-gray-300">
+          >Camel Case</label
+        >
+        <input
+          type="text"
+          id="camel-case"
+          class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        />
+      </div>
+      <div class="mb-6">
+        <label for="default-input" class="block mb-2 text-sm font-medium text-gray-300">
+          >Pascal Case</label
+        >
+        <input
+          type="text"
+          id="pascal-case"
+          class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        />
+      </div>
+      <div class="mb-6">
+        <label for="default-input" class="block mb-2 text-sm font-medium text-gray-300">
+          >Snake Case</label
+        >
+        <input
+          type="text"
+          id="snake-case"
+          class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        />
+      </div>
+      <div class="mb-6">
+        <label for="default-input" class="block mb-2 text-sm font-medium text-gray-300">
+          >Kebab Case</label
+        >
+        <input
+          type="text"
+          id="kebab-case"
+          class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        />
+      </div>
+    </div>
+    <script src="convert-naming-convention.js"></script>
+  </body>
+</html>
